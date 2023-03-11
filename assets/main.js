@@ -16,6 +16,27 @@ function savefrom(e) {
     }
 }
 
+document.getElementById('cbox-all').addEventListener('click', function() {
+  var checkboxes = document.getElementsByName('cekbox[]');
+  for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].checked = this.checked;
+  }
+});
+
+var checkboxes = document.getElementsByName('cekbox[]');
+for (var i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].addEventListener('click', function() {
+    var allChecked = true;
+    for (var j = 0; j < checkboxes.length; j++) {
+      if (!checkboxes[j].checked) {
+        allChecked = false;
+        break;
+      }
+    }
+    document.getElementById('cbox-all').checked = allChecked;
+  });
+}
+
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle2="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)

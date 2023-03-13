@@ -4,7 +4,7 @@ body{
    }
   .btn-success {
    color: #000000;
-   background-color: #39FF14 !important;
+   background-color: #39FF14;
    } 
    .text-success {
    color: #39FF14 !important;
@@ -17,7 +17,7 @@ body{
   --border-width: .125em;
   --curve-size: .5em;
   --blur: 30px;
-  --bg: #080312;
+  --bg: #080312 !important;
   --color: #afffff;
   color: var(--color);
     /* use position: relative; so that BG is only for .btn */

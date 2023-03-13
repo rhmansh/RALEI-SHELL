@@ -16,182 +16,28 @@ body{
    }
 
 .btn-cool {
-  --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
-  --border-width: .125em;
-  --curve-size: .5em;
-  --blur: 30px;
-  --bg: #080312;
-  --color: #afffff;
-  color: var(--color);
-  /* use position: relative; so that BG is only for .btn */
-  position: relative;
-  isolation: isolate;
-  display: inline-flex;
-  place-content: center;
-  font-size: 1 rem;
-  border: 0;
+  border-radius: .25rem;
   text-transform: uppercase;
-  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
-  -webkit-clip-path: polygon(
-            /* Top-left */
-            0% var(--curve-size),
-
-            var(--curve-size) 0,
-            /* top-right */
-            100% 0,
-            100% calc(100% - var(--curve-size)),
-
-            /* bottom-right 1 */
-            calc(100% - var(--curve-size)) 100%,
-            /* bottom-right 2 */
-            0 100%);
-  clip-path: polygon(
-            /* Top-left */
-            0% var(--curve-size),
-
-            var(--curve-size) 0,
-            /* top-right */
-            100% 0,
-            100% calc(100% - var(--curve-size)),
-
-            /* bottom-right 1 */
-            calc(100% - var(--curve-size)) 100%,
-            /* bottom-right 2 */
-            0 100%);
-  -webkit-transition: color 250ms;
-  transition: color 250ms;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+  border: 0 solid;
+  overflow: hidden;
 }
 
-
-.btn-cool::after,
-.btn-cool::before {
-  content: '';
-  position: absolute;
-  inset: 0;
+.btn-cool:hover {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
 }
-
-.btn-cool::before {
-  background: var(--border-color);
-  background-size: 300% 300%;
-  -webkit-animation: move-bg7234 5s ease infinite;
-          animation: move-bg7234 5s ease infinite;
-  z-index: -2;
-}
-
-@-webkit-keyframes move-bg7234 {
-  0% {
-    background-position: 31% 0%
-  }
-
-  50% {
-    background-position: 70% 100%
-  }
-
-  100% {
-    background-position: 31% 0%
-  }
-}
-
-@keyframes move-bg7234 {
-  0% {
-    background-position: 31% 0%
-  }
-
-  50% {
-    background-position: 70% 100%
-  }
-
-  100% {
-    background-position: 31% 0%
-  }
-}
-
-.btn-cool::after {
-  background: var(--bg);
-  z-index: -1;
-  -webkit-clip-path: polygon(
-            /* Top-left */
-            var(--border-width) 
-            calc(var(--curve-size) + var(--border-width) * .5),
-
-            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
-
-            /* top-right */
-            calc(100% - var(--border-width)) 
-            var(--border-width),
-
-            calc(100% - var(--border-width)) 
-            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
-
-            /* bottom-right 1 */
-            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
-            /* bottom-right 2 */
-            var(--border-width) calc(100% - var(--border-width)));
-          clip-path: polygon(
-            /* Top-left */
-            var(--border-width) 
-            calc(var(--curve-size) + var(--border-width) * .5),
-
-            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
-
-            /* top-right */
-            calc(100% - var(--border-width)) 
-            var(--border-width),
-
-            calc(100% - var(--border-width)) 
-            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
-
-            /* bottom-right 1 */
-            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
-            /* bottom-right 2 */
-            var(--border-width) calc(100% - var(--border-width)));
-  -webkit-transition: -webkit-clip-path 500ms;
-  transition: -webkit-clip-path 500ms;
-  transition: clip-path 500ms;
-  transition: clip-path 500ms, -webkit-clip-path 500ms;
-}
-
-.btn-cool:where(:hover, :focus)::after {
-  -webkit-clip-path: polygon(
-                /* Top-left */
-                calc(100% - var(--border-width)) 
-
-                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    
-                calc(100% - var(--border-width))
-
-                var(--border-width),
-    
-                /* top-right */
-                calc(100% - var(--border-width))
-
-                 var(--border-width),
-    
-                calc(100% - var(--border-width)) 
-
-                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
-    
-                /* bottom-right 1 */
-                calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
-                calc(100% - var(--border-width)),
-
-                /* bottom-right 2 */
-                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
-                calc(100% - var(--border-width)));
-          clip-path: polygon(
-                /* Top-left */
-                calc(100% - var(--border-width)) 
-
-                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
-    
-                calc(100% - var(--border-width))
-
-                var(--border-width),
-    
-                /* top-right */
-                calc(100% - var(--border-width))
-
-                 var(--border-width),
-    
-                calc(100% - var(--border-width

@@ -4,7 +4,7 @@ body{
    }
   .btn-success {
    color: #000000;
-   background-color: #39FF14;
+   background-color: #39FF14 !important;
    } 
    .text-success {
    color: #39FF14 !important;
@@ -12,12 +12,13 @@ body{
    .text-danger {
    color: #FF0734 !important;
    }
-.btn-success {
+
+.btn-cool {
   --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
   --border-width: .125em;
   --curve-size: .5em;
   --blur: 30px;
-  --bg: #080312 !important;
+  --bg: #080312;
   --color: #afffff;
   color: var(--color);
     /* use position: relative; so that BG is only for .btn */
@@ -29,8 +30,9 @@ body{
   font-size: 17px;
   border: 0;
   text-transform: uppercase;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
-  clip-path: polygon(
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  -webkit-clip-path: polygon(
             /* Top-left */
             0% var(--curve-size),
 
@@ -43,21 +45,50 @@ body{
             calc(100% - var(--curve-size)) 100%,
             /* bottom-right 2 */
             0 100%);
+          clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+  -webkit-transition: color 250ms;
   transition: color 250ms;
 }
 
-.btn-success::after,
-.btn-success::before {
+.btn-cool::after,
+.btn-cool::before {
   content: '';
   position: absolute;
   inset: 0;
 }
 
-.btn-success::before {
+.btn-cool::before {
   background: var(--border-color);
   background-size: 300% 300%;
-  animation: move-bg7234 5s ease infinite;
+  -webkit-animation: move-bg7234 5s ease infinite;
+          animation: move-bg7234 5s ease infinite;
   z-index: -2;
+}
+
+@-webkit-keyframes move-bg7234 {
+  0% {
+    background-position: 31% 0%
+  }
+
+  50% {
+    background-position: 70% 100%
+  }
+
+  100% {
+    background-position: 31% 0%
+  }
 }
 
 @keyframes move-bg7234 {
@@ -74,10 +105,10 @@ body{
   }
 }
 
-.btn-success::after {
+.btn-cool::after {
   background: var(--bg);
   z-index: -1;
-  clip-path: polygon(
+  -webkit-clip-path: polygon(
             /* Top-left */
             var(--border-width) 
             calc(var(--curve-size) + var(--border-width) * .5),
@@ -95,11 +126,32 @@ body{
             calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
             /* bottom-right 2 */
             var(--border-width) calc(100% - var(--border-width)));
+          clip-path: polygon(
+            /* Top-left */
+            var(--border-width) 
+            calc(var(--curve-size) + var(--border-width) * .5),
+
+            calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+
+            /* top-right */
+            calc(100% - var(--border-width)) 
+            var(--border-width),
+
+            calc(100% - var(--border-width)) 
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+  -webkit-transition: -webkit-clip-path 500ms;
+  transition: -webkit-clip-path 500ms;
   transition: clip-path 500ms;
+  transition: clip-path 500ms, -webkit-clip-path 500ms;
 }
 
-.btn-success:where(:hover, :focus)::after {
-  clip-path: polygon(
+.btn-cool:where(:hover, :focus)::after {
+  -webkit-clip-path: polygon(
                 /* Top-left */
                 calc(100% - var(--border-width)) 
 
@@ -125,9 +177,19 @@ body{
                 /* bottom-right 2 */
                 calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
                 calc(100% - var(--border-width)));
-  transition: 200ms;
-}
+          clip-path: polygon(
+                /* Top-left */
+                calc(100% - var(--border-width)) 
 
-.btn-success:where(:hover, :focus) {
-  color: #fff;
-}
+                calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+    
+                calc(100% - var(--border-width))
+
+                var(--border-width),
+    
+                /* top-right */
+                calc(100% - var(--border-width))
+
+                 var(--border-width),
+    
+                calc(100% - var(--border-width

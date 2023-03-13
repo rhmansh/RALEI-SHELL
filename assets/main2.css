@@ -21,17 +21,16 @@ body{
   --bg: #080312;
   --color: #afffff;
   color: var(--color);
-    /* use position: relative; so that BG is only for .btn */
+  /* use position: relative; so that BG is only for .btn */
   position: relative;
   isolation: isolate;
   display: inline-grid;
   place-content: center;
-  padding: .5em 1.5em;
   font-size: 17px;
   border: 0;
   text-transform: uppercase;
   -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
   -webkit-clip-path: polygon(
             /* Top-left */
             0% var(--curve-size),
@@ -45,7 +44,7 @@ body{
             calc(100% - var(--curve-size)) 100%,
             /* bottom-right 2 */
             0 100%);
-          clip-path: polygon(
+  clip-path: polygon(
             /* Top-left */
             0% var(--curve-size),
 

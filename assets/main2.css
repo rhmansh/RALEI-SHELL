@@ -1,7 +1,9 @@
 body{
    font-family: 'Exo 2', 'sans-serif';
    // background-image: linear-gradient(to right top, #391c77, #410f58, #3d093c, #310826, #220716, #230c12, #231110, #221511, #302213, #353416, #2d4725, #005b44);
-   background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+   background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%, 
+  #6E52FF 66%, 
+  #1F8EFF);
    width: 100vw;
    height: 100vh;
 }

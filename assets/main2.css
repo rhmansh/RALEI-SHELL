@@ -15,6 +15,12 @@ body{
    width: 100vw;
    height: 100vh;
 }
+
+.card {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
   .btn-success {
    color: #000000;
    background-color: #39FF14 !important;

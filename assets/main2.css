@@ -83,7 +83,7 @@ body{
   border: 0;
   background-color: gray; /* mengubah warna latar belakang menjadi abu-abu */
   letter-spacing: 1.5px;
-  font-size: 15px;
+  font-size: 0.7rem;
   transition: all .3s ease;
   box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
   color: hsl(0, 0%, 100%);

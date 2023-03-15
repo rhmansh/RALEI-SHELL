@@ -37,27 +37,30 @@ body{
   padding-left: 25px;
   padding-right: 25px;
   color: #fff;
-  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
-  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px));
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px));
   height: 35px;
   font-size: 0.7rem;
   line-height: 20px;
   letter-spacing: 1.2px;
   transition: .2s .1s;
   background-image: linear-gradient(90deg,#1c1c1c,#4c4c4c);
-  border: 1px solid #fff;
+  border: 1px solid transparent;
   overflow: hidden;
-  position: relative; /* Tambahkan property position */
+  position: relative;
 }
 
-.btn-cool::after {
-  content: ''; /* Tambahkan element pseudo */
+.btn-cool::before {
+  content: "";
   position: absolute;
-  bottom: 0;
-  right: 0;
-  border-top: 1px solid #fff;
+  bottom: -1px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
   border-right: 1px solid #fff;
-  transform: translateY(100%) rotate(45deg); /* Tambahkan property transform */
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
 }
 
 .btn-cool:hover {
@@ -67,6 +70,8 @@ body{
   padding-left: 30px;
 }
 
-.btn-cool:hover::after {
-  border-color: #4c4c4c; /* Ubah warna border ketika di-hover */
+.btn-cool:hover::before {
+  width: 15px;
+  height: 15px;
+  transition: all .3s ease-in;
 }

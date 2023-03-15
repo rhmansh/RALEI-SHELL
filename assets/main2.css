@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+.judul {
+  font-face: 'Press Start 2P', cursive;
+  font-weight:bold;
+  font-size:10rem;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #EA4C89;
+
+  text-shadow:
+    0rem 1rem 0rem #EA4C89,
+    0rem 2rem 0rem #C32360,
+    0rem 3rem 0rem #8E1344
+  ;
+}
+
 body{
    font-family: 'Exo 2', 'sans-serif';
    background: linear-gradient(to right bottom, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 70%, #6E52FF 70%, #1F8EFF);

@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 .judul {
-  font-family: 'Press Start 2P', Sans-serif;
-  font-weight:bold;
+  font-family: 'Press Start 2P';
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: #EA4C89;
 

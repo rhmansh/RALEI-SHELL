@@ -76,3 +76,61 @@ body{
   height: 15px;
   transition: all .3s ease-in;
 }
+
+.btn-cool2 {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #212121;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btn-cool2:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.btn-cool2:not(hover) {
+  transition: all 1s;
+}
+
+.btn-cool2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  border-radius: 0.3em;
+  z-index: -1;
+}
+
+.btn-cool2::after {
+  content: '';
+  position: absolute;
+  top: -0.08em;
+  left: -0.08em;
+  width: calc(100% + 0.16em);
+  height: calc(100% + 0.16em);
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  z-index: -2;
+}
+
+.btn-cool2:hover::before {
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.btn-cool2:hover::after {
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}

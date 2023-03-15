@@ -78,29 +78,29 @@ body{
 }
 
 .btn-cool2 {
-  border-radius: 10px;
+  border-radius: .15rem;
   border: 0;
-  background-color: gray; /* mengubah warna latar belakang menjadi abu-abu */
+  background-color: #4c4c4c; /* mengubah warna latar belakang menjadi abu-abu */
   letter-spacing: 1.5px;
   font-size: 0.7rem;
   transition: all .3s ease;
-  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  box-shadow: #1c1c1c;
   color: hsl(0, 0%, 100%);
 }
 
 .btn-cool2:hover {
-  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+  box-shadow: #1c1c1c;
   background-color: #b3b3b3; /* mengubah warna latar belakang pada saat hover */
 }
 
 .btn-cool2:focus {
-  box-shadow: 0 0 0 0.25rem rgba(128, 128, 128, 0.5);
+  box-shadow: #1c1c1c;
   outline: none;
 }
 
 .btn-cool2:active {
   background-color: #808080; /* mengubah warna latar belakang pada saat active */
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  box-shadow: #1c1c1c;
   transform: translateY(5px);
   transition: 200ms;
 }

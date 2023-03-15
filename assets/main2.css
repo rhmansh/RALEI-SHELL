@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 .judul {
-  font-face: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', cursive;
   font-weight:bold;
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: #EA4C89;

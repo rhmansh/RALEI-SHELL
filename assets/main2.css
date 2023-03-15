@@ -77,60 +77,31 @@ body{
   transition: all .3s ease-in;
 }
 
-.btn-cool2 {
-  padding: 0.1em 0.25em;
-  width: 13em;
-  height: 4.2em;
-  background-color: #212121;
-  border: 0.08em solid #fff;
-  border-radius: 0.3em;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.custom-btn {
+  padding: 17px 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: gray; /* mengubah warna latar belakang menjadi abu-abu */
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all .3s ease;
+  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
 }
 
-.btn-cool2:hover {
-  transition: all 0.5s;
-  transform: translate(0, 0.4em);
-  box-shadow: 0 0 0 0 #fff;
+.custom-btn:hover {
+  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+  background-color: #b3b3b3; /* mengubah warna latar belakang pada saat hover */
 }
 
-.btn-cool2:not(hover) {
-  transition: all 1s;
+.custom-btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(128, 128, 128, 0.5);
+  outline: none;
 }
 
-.btn-cool2::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #212121;
-  border-radius: 0.3em;
-  z-index: -1;
-}
-
-.btn-cool2::after {
-  content: '';
-  position: absolute;
-  top: -0.08em;
-  left: -0.08em;
-  width: calc(100% + 0.16em);
-  height: calc(100% + 0.16em);
-  border: 0.08em solid #fff;
-  border-radius: 0.3em;
-  z-index: -2;
-}
-
-.btn-cool2:hover::before {
-  transform: translate(0, 0.4em);
-  box-shadow: 0 0 0 0 #fff;
-}
-
-.btn-cool2:hover::after {
-  transform: translate(0, 0.4em);
-  box-shadow: 0 0 0 0 #fff;
+.custom-btn:active {
+  background-color: #808080; /* mengubah warna latar belakang pada saat active */
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
 }

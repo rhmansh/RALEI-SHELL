@@ -16,10 +16,6 @@ body{
    height: 100vh;
 }
 
-.card {
-  border-top-left-radius: 9%;
-}
-
   .btn-success {
    color: #000000;
    background-color: #39FF14 !important;
@@ -47,7 +43,7 @@ body{
   height: 35px;
   font-size: 0.7rem;
   line-height: 20px;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.4px;
   transition: .2s .1s;
   background-image: linear-gradient(90deg,#1c1c1c,#4c4c4c);
   border: 1px solid #fff;

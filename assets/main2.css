@@ -5,7 +5,8 @@
   -webkit-text-stroke-width: 0.1rem;
   -webkit-text-stroke-color: #6E52FF;
 
-  
+text-shadow:
+    0rem 1rem 0rem #6E52FF
 }
 
 body{

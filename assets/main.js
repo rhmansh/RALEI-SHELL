@@ -1,3 +1,8 @@
+$(window).on("load", function() {
+  var preloader = $(".preloader");
+  preloader.fadeOut();   
+});
+
 function savefrom(e) {
     if (!document.getElementById(e).value) {
         alert('File Kosong Ngapain Di download');

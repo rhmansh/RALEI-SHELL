@@ -16,6 +16,33 @@ body{
    height: 100vh;
 }
 
+.zoom-in {
+  animation: zoom-in 0.5s ease-out;
+  -webkit-animation: zoom-in 0.5s ease-out;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoom-in {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
   .btn-success {
    color: #000000;
    background-color: #39FF14 !important;

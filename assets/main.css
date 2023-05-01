@@ -19,7 +19,7 @@ text-shadow:
 }
 
 .itsme::before {
-  content: "@rahmanralei";
+  content: "By @rahmanralei";
 }
 
 body{

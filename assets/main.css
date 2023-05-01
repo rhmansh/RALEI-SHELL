@@ -15,6 +15,7 @@ text-shadow:
 
 .itsme {
   font-family: 'Press Start 2P';
+  color: #6E52FF;
 }
 
 .itsme::before {

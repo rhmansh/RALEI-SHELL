@@ -5,15 +5,17 @@
 Mungkin Pertengahan Bulan Mei (May) :v
 
 # FEATURES
-- Responsive
+- Responsive Layout
 - Bypass Imunify360 Tested In Version 6.12.4-1
 - Bypass Blank Shell
 - Bypass Other Firewall
 - Adminer (PHP Adminer)
 - Command Shell (Terminal)
 - Lock File
+- Back Connect
 - Auto Root
 - Mass Delete
+- Mass Chmod
 - Dll
 
 # PREVIEW
@@ -22,4 +24,4 @@ Mungkin Pertengahan Bulan Mei (May) :v
 # BETA PREVIEW IN MOBILE
 ![IMG-20230414-WA0179(1)](https://user-images.githubusercontent.com/60416516/232088226-53f54e2a-0550-437c-90fc-fefc894a57c7.jpg)
 
-thank to : senpaisquad team
+thank to : senpaisquad team, ghost exploiter team

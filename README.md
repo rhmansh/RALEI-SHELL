@@ -5,7 +5,7 @@
 Mungkin Pertengahan Bulan Mei (May) :v
 
 # FEATURES
-- Bypass Imunify360 At Upload
+- Bypass Imunify360 Tested In Version 6.12.4-1
 - Bypass Blank Shell
 - Bypass 403 Forbidden
 - Adminer

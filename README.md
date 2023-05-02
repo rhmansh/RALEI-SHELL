@@ -2,7 +2,7 @@
 {RALEI SHELL} is a highly responsive and powerful script that offers unlimited possibilities for your webshells b4ckdoor.
 
 # RELEASE AT
-Mungkin Pertengah Bulan Ramadhan :v
+Mungkin Pertengahan Bulan Mei (May) :v
 
 # FEATURES
 - Bypass Imunify360 At Upload

@@ -51,20 +51,25 @@
                     text-shadow: 0 0 10px #00e676;
                 }
 		
-.version {
-  color: #00ff00;
-  text-shadow: 0 0 5px #00ff00;
-}
-	
-	ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
+
+.version {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
 
 	</style>
 </head>
@@ -113,6 +118,12 @@ li {
            <li><span class="version">v2.0</span> <a href="download/ralei-shell-v2.0.zip">Download</a></li>
            <li><span class="version">v3.0</span> <a href="download/ralei-shell-v3.0.zip">Download</a></li>
        </ul>
+
+	<footer>
+  <div class="container">
+    <p>&copy; 2023 Rahman Ralei. All rights reserved.</p>
+  </div>
+</footer>
 
 
 </body>

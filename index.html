@@ -99,9 +99,9 @@
 	<p>RALEI SHELL is a powerful script that offers a wide range of features for managing a remote server. With its ability to bypass various security measures and perform tasks such as uploading files, executing commands, and modifying permissions, RALEI SHELL is a useful tool for web developers and system administrators. It is important to use RALEI SHELL responsibly and only on servers that you have permission to access. If you encounter any issues or have any questions about RALEI SHELL, please consult the documentation or contact the developer for assistance.</p>	
 	
 	<h2>Download RALEI SHELL</h2>
-     <ul>
+<ul>
     <li><span class="version">version 1.0 (beta)</span> <a href="#" class="download-link" data-url="https://raw.githubusercontent.com/rhmansh/RALEI-SHELL/main/download/ralei-beta.php" data-filename="ralei-beta.php">Download</a></li>
-    </ul>
+</ul>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -114,15 +114,25 @@ $(document).ready(function() {
     });
 
     function downloadFile(url, filename) {
-        var link = document.createElement("a");
-        link.href = url;
-        link.download = filename;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.responseType = 'blob';
+
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                var blob = xhr.response;
+                var link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = filename;
+                link.click();
+            }
+        };
+
+        xhr.send();
     }
 });
 </script>
+
 	<footer>
   <div class="container">
     <p>&copy; 2023 Rahman Ralei. All rights reserved.</p>

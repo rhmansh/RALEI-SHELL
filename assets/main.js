@@ -46,3 +46,11 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
+  
+ $('select[name=maction]').on('change', function() {
+        if ($(this).val() == 'cemode') {
+            $('input[name=cemod]').show();
+        } else {
+            $('input[name=cemod]').hide();
+        }
+    });

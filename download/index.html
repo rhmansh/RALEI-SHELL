@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ralei Shell - Download</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index">
+  <meta name="description" content="Download Ralei-Shell, Ralei Shell is a highly responsive and powerful script that offers unlimited possibilities for your webshells b4ckdoor.">
+  <meta name="author" content="Rahman Ralei">
+  <style>
+    body {
+      background-color: #12172e;
+      color: #fff;
+      font-family: 'Exo 2', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .text {
+      animation: motionBlur 2s linear infinite;
+    }
+    
+    @keyframes motionBlur {
+      0% {
+        text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+      }
+      15% {
+        text-shadow: 0 0 15px red;
+      }
+      25% {
+        text-shadow: 0 0 15px cyan;
+      }
+      50% {
+        text-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+      }
+      75% {
+        text-shadow: 0 0 15px pink;
+      }
+      100% {
+        text-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
+      }
+    }
+    
+    .version-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .version-list li {
+      margin-bottom: 10px;
+    }
+    
+    .version-list a {
+      display: inline-block;
+      background-color: #ff6f00;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    
+    .version-list a:hover {
+      background-color: #ff902e;
+    }
 
+   a:disabled,
+   a[disabled] {
+   border: 1px solid #999999;
+   background-color: #b0b0b0;
+   color: #777777;
+   cursor: not-allowed;
+   pointer-events: none;
+}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text">Ralei Shell - Download</h1>
+    <p class="text">Download the latest version of Ralei Shell:</p>
+    <ul class="version-list">
+      <li><a href="#" class="download-link" data-url="https://raw.githubusercontent.com/rhmansh/RALEI-SHELL/main/download/ralei-beta.php" data-filename="raleishell-v1.0.php">Ralei Shell v1.0</a></li>
+      <li><a href="ralei-shell-v1.1.zip" download disabled>Ralei Shell v1.1</a></li>
+      <li><a href="ralei-shell-v1.2.zip" download disabled>Ralei Shell v1.2</a></li>
+      <li><a href="ralei-shell-v1.3.zip" download disabled>Ralei Shell v1.3</a></li>
+      <li><a href="ralei-shell-v1.4.zip" download disabled>Ralei Shell v1.4</a></li>
+    </ul>
+    <p class="text">Stay tuned for future updates and new features!</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(".download-link").click(function(e) {
+        e.preventDefault();
+        var url = $(this).data("url");
+        var filename = $(this).data("filename");
+        downloadFile(url, filename);
+    });
+
+    function downloadFile(url, filename) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.responseType = 'blob';
+
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                var blob = xhr.response;
+                var link = document.createElement('a');
+                link.href = window.URL.createObjectURL(blob);
+                link.download = filename;
+                link.click();
+            }
+        };
+
+        xhr.send();
+    }
+});
+</script>
+</body>
+</html>
+
+
+</body>
+</html>

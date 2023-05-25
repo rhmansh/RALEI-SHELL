@@ -49,3 +49,35 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
             $('input[name=cemod]').hide();
         }
     });
+
+
+$(document).ready(function() {
+    $("#formcmd").submit(function(e) {
+      e.preventDefault();
+      var command = $("#command").val();
+      var $btn = $(".btn");
+      var $spinner = $btn.find(".spinner-border");
+      var $sendIcon = $btn.find(".fa-send");
+
+      $spinner.removeClass("d-none");
+      $sendIcon.addClass("d-none");
+      $btn.prop("disabled", true);
+
+      $.ajax({
+        type: "POST",
+        data: { command: command },
+        success: function(response) {
+          $("#rescmd").val(response);
+          $spinner.addClass("d-none");
+          $sendIcon.removeClass("d-none");
+          $btn.prop("disabled", false);
+        },
+        error: function() {
+          $("#rescmd").val("an error occurred!");
+          $spinner.addClass("d-none");
+          $sendIcon.removeClass("d-none");
+          $btn.prop("disabled", false);
+        }
+      });
+    });
+  });

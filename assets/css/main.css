@@ -105,14 +105,14 @@ body{
   text-shadow: 0rem 1rem 0rem #6E52FF;
 }
 
-.lds-hourglass {
+.loder {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
 }
 
-.lds-hourglass:after {
+.loder:after {
   content: " ";
   display: block;
   border-radius: 50%;
@@ -122,10 +122,10 @@ body{
   box-sizing: border-box;
   border: 32px solid #fff;
   border-color: #6E52FF transparent #6E52FF transparent;
-  animation: lds-hourglass 1.2s infinite;
+  animation: loder 1.2s infinite;
 }
 
-@keyframes lds-hourglass {
+@keyframes loder {
   0% {
     transform: rotate(0);
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
@@ -246,6 +246,33 @@ body{
       -ms-transform: translateY(-2px);
           transform: translateY(-2px);
 }
+
+.btn-ralei2 {
+  background-color: #2f3640;
+  color: #FF0000;
+  border: 1px solid #6E52FF;
+  position: relative;
+  border-bottom: 3px solid #6E52FF;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-ralei2:hover {
+  background-color: #f8f8f8;
+  color: #2f3640;
+  border-color: #2f3640;
+  border-bottom: 4px solid #ffc107;
+  -webkit-box-shadow: 2px 2px 20px #2f3640;
+          box-shadow: 2px 2px 20px #2f3640;
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
 .btn-outline-light {
   color: #ffc107;
   background-color: transparent !important;

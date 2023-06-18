@@ -1,7 +1,5 @@
-<div align="center">
-# RALEI-SHELL Backdoor<br>
+# RALEI-SHELL Backdoor
 ![PHP](https://www.php.net/images/logos/php-power-micro2.png)
-</div>
 {RALEI SHELL} is a highly responsive and powerful script that offers unlimited possibilities for your webshells b4ckdoor.
 
 # RELEASE AT

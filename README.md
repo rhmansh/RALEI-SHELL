@@ -5,15 +5,17 @@
 Mungkin Pertengahan Bulan Mei (May) :v
 
 # FEATURES
-- Responsive Layout
+- Responsive Layout And Cool
 - Bypass Imunify360 Tested In Version 6.12.4-1
-- Bypass Blank Shell
+- Bypass Blank Shell From WAF
 - Bypass Other Firewall
+- Bypass 403 Forbidden
 - Adminer (PHP Adminer)
 - Command Shell (Terminal)
 - Lock File
-- Back Connect
-- Auto Root
+- Search File
+- Back Connect (Reverse Shell)
+- Auto Root (Pwnkit)
 - Mass Delete
 - Mass Chmod
 - Dll

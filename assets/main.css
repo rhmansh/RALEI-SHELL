@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+.judul {
+  font-family: 'Press Start 2P';
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #6E52FF;
+
+text-shadow:
+    0rem 1rem 0rem #6E52FF
+}
+
+.judul::before {
+  content: "Ralei 5hell";
+}
+
+.itsme {
+  font-family: 'Press Start 2P';
+  color: #6E52FF;
+}
+
+.itsme::before {
+  content: "By @rahmanralei";
+}
+
+body{
+   font-family: 'Exo 2', 'sans-serif';
+   background: linear-gradient(to right bottom, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 70%, #6E52FF 70%, #1F8EFF);
+   width: 100vw;
+   height: 100vh;
+}
+
+.zoom-in {
+  animation: zoom-in 0.5s ease-out;
+  -webkit-animation: zoom-in 0.5s ease-out;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoom-in {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+  .btn-success {
+   color: #000000;
+   background-color: #39FF14 !important;
+   } 
+   .btn-outline-light {
+   background-image: linear-gradient(90deg,#1c1c1c,#4c4c4c);
+   } 
+   .text-success {
+   color: #39FF14 !important;
+   }
+   .text-danger {
+   color: #FF0734 !important;
+   }
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(85, 26, 139, 0.5);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  font-family: 'Press Start 2P';
+}
+
+.preloader::after {
+  content: "Ralei Loading Dulu...";
+  display: block;
+  margin-top: 1rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0rem 1rem 0rem #6E52FF;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #6E52FF transparent #6E52FF transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.btn-cool {
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px));
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px));
+  height: 35px;
+  font-size: 0.7rem;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg,#1c1c1c,#4c4c4c);
+  border: 1px solid #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-cool::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.btn-cool:hover {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.btn-cool:hover::before {
+  width: 15px;
+  height: 15px;
+  transition: all .3s ease-in;
+}
+
+.btn-cool2 {
+  border-radius: .20rem;
+  border: 1px solid #6E52FF;
+  background-color: #4c4c4c; /* mengubah warna latar belakang menjadi abu-abu */
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  transition: all .3s ease;
+  box-shadow: #1c1c1c;
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-cool2:hover {
+  color: #000;
+  box-shadow: #1c1c1c;
+  background-color: #b3b3b3; /* mengubah warna latar belakang pada saat hover */
+}
+
+.btn-cool2:focus {
+  box-shadow: #1c1c1c;
+  outline: none;
+}
+
+.btn-cool2:active {
+  background-color: #808080; /* mengubah warna latar belakang pada saat active */
+  box-shadow: #1c1c1c;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+.form-check-input {
+  border-width: 1px;
+  border-color: #fff;
+}
+.btn-ralei {
+  background-color: #2f3640;
+  color: #ffc107;
+  border: 1px solid #6E52FF;
+  position: relative;
+  border-bottom: 3px solid #6E52FF;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-ralei:hover {
+  background-color: #f8f8f8;
+  color: #2f3640;
+  border-color: #2f3640;
+  border-bottom: 4px solid #ffc107;
+  -webkit-box-shadow: 2px 2px 20px #2f3640;
+          box-shadow: 2px 2px 20px #2f3640;
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+.btn-outline-light {
+  color: #ffc107;
+  background-color: transparent !important;
+  background-image: none !important;
+  width: 6.5em;
+  border-radius: 0.2em;
+  border: 1px solid #fff;
+}
+
+.btn-outline-light:hover {
+   background-color: #f8f8f8 !important;
+   color: #ffc107;
+  }
